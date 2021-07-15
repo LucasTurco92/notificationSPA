@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    height: 10vh;
+}
+
+@media (min-width: 720px) {
+    .container {
+        height: 30vh;
+    }
+}
+
+@media (min-width:1000px) {
+    .container {
+        height: 35vh;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        height: 40vh;
+    }
+}

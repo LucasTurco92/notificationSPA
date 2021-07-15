@@ -1,49 +1,60 @@
-.BaseContainer {
-    padding: 0 5vh;
+.baseContainer {
     width: 100%;
-    min-height: 75vh;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 60vh;
     position: relative;
-    align-items: center;
-    h2 {
-        font-size: 5em;
-        font-family: CormorantInfant;
-    }
-    p {
-        font-size: 16px;
+    .content {
+        align-items: center;
         padding: 0 5vh;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 5em;
+            font-family: CormorantInfant;
+        }
+        h2 {
+            font-size: 5em;
+            font-family: CormorantInfant;
+        }
+        p {
+            font-size: 16px;
+            padding: 0 5vh;
+        }
     }
 }
 
-.ContainerRed {
-    @extend .BaseContainer;
+.containerFirst {
+    @extend .baseContainer;
     background-color: var(--white);
-    border-bottom: solid var(--white) 5vh;
+    .content {
+        h2 {
+            margin: 50% 0 0;
+        }
+    }
 }
 
-.ContainerGray {
-    @extend .BaseContainer;
+.containerThird {
+    @extend .baseContainer;
+    background-color: var(--white);
+}
+
+.containerSecond {
+    @extend .baseContainer;
     background-color: var(--grey);
-    flex-direction: row;
-    border-bottom: solid var(--grey) 5vh;
-    h2 {
-        text-align: center;
-    }
-}
-
-.ContainerDarkBlue {
-    @extend .BaseContainer;
-    background-color: var(--darkBlue);
-    flex-wrap: wrap;
-}
-
-@media (max-width: 1000px) {
-    .ContainerGray {
+    .content {
         flex-wrap: wrap;
+        h3 {
+            text-align: center;
+        }
+        flex-direction: row;
     }
-    .ContainerDarkBlue {
+    //border-bottom: solid var(--grey) 5vh;
+}
+
+.containerFourth {
+    @extend .baseContainer;
+    background-color: var(--darkBlue);
+    .content {
+        flex-wrap: wrap;
         p {
             max-width: width 500px;
         }
@@ -51,19 +62,36 @@
 }
 
 @media (min-width: 1000px) {
-    .ContainerGray {
-        flex-wrap: nowrap;
-    }
-    .ContainerDarkBlue {
-        p {
-            min-width: width 500px;
+    .containerFirst {
+        .content {
+            justify-content: center;
+            flex-direction: row;
+            margin: none;
+            h2 {
+                font-size: 12.21em;
+            }
         }
+    }
+    .containerSecond {
+        .content {
+            flex-wrap: nowrap;
+        }
+    }
+    .containerFourth {
+        .content {
+            p {
+                min-width: width 500px;
+            }
+        }
+    }
+    .baseContainer {
+        min-height: none;
     }
 }
 
 @media ( min-width: 720px) {
-    .BaseContainer {
-        h2 {
+    .baseContainer {
+        h3 {
             font-size: 7.21em;
         }
         p {
