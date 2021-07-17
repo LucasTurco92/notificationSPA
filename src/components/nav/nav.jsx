@@ -18,7 +18,7 @@ const Nav =()=>{
         <ul className={styles.nav}>
             <div className={menuStatus}>
                 <li><Link href="#intro" >Intro</Link></li>
-                <li><Link href="#quienes" >Quienes Somos?</Link></li>
+                <li ><Link href="#quienes">Quienes Somos?</Link></li>
                 <li><Link href="#mision" >Mision</Link></li>
                 <li><Link href="#contacto" >Contacto</Link></li>
             </div>

@@ -1,5 +1,5 @@
 import styles from "./section-container.module.scss";
-import Wave from "../wave/wave.jsx";
+import Wave from "../wave/wave.jsx"
 const SectionContainer = (props) => {
   const { children,show,color,id } = props;
   return (
@@ -8,7 +8,7 @@ const SectionContainer = (props) => {
         show &&
             <Wave color={color}/>
         }
-      <div className={styles.content}>{children}</div>
+      {children}
     </div>
   );
 };

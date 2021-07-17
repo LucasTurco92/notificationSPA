@@ -1,35 +1,32 @@
 .baseContainer {
     width: 100%;
-    min-height: 60vh;
     position: relative;
-    .content {
-        align-items: center;
+}
+
+.content {
+    align-items: center;
+    padding: 0 5vh;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 5em;
+        font-family: CormorantInfant;
+        margin-bottom: auto;
+    }
+    h2 {
+        font-size: 5em;
+        font-family: CormorantInfant;
+        margin-bottom: auto;
+    }
+    p {
+        font-size: 16px;
         padding: 0 5vh;
-        display: flex;
-        flex-direction: column;
-        h3 {
-            font-size: 5em;
-            font-family: CormorantInfant;
-        }
-        h2 {
-            font-size: 5em;
-            font-family: CormorantInfant;
-        }
-        p {
-            font-size: 16px;
-            padding: 0 5vh;
-        }
     }
 }
 
 .containerFirst {
     @extend .baseContainer;
     background-color: var(--white);
-    .content {
-        h2 {
-            margin: 50% 0 0;
-        }
-    }
 }
 
 .containerThird {
@@ -40,52 +37,18 @@
 .containerSecond {
     @extend .baseContainer;
     background-color: var(--grey);
-    .content {
-        flex-wrap: wrap;
-        h3 {
-            text-align: center;
-        }
-        flex-direction: row;
-    }
-    //border-bottom: solid var(--grey) 5vh;
 }
 
 .containerFourth {
     @extend .baseContainer;
     background-color: var(--darkBlue);
-    .content {
-        flex-wrap: wrap;
-        p {
-            max-width: width 500px;
-        }
-    }
+    min-height: none;
 }
 
 @media (min-width: 1000px) {
-    .containerFirst {
-        .content {
-            justify-content: center;
-            flex-direction: row;
-            margin: none;
-            h2 {
-                font-size: 12.21em;
-            }
-        }
-    }
-    .containerSecond {
-        .content {
-            flex-wrap: nowrap;
-        }
-    }
-    .containerFourth {
-        .content {
-            p {
-                min-width: width 500px;
-            }
-        }
-    }
     .baseContainer {
         min-height: none;
+        min-height: 60vh;
     }
 }
 

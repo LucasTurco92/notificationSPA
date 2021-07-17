@@ -6,14 +6,15 @@ import SectionThird from "../src/components/section-third/section-third.jsx";
 import SectionFourth from "../src/components/section-fourth/section-fourth.jsx";
 
 export default function Home() {
+
   return (
     <div>
       <Header/>
       <Nav/>
       <SectionFirst/>
-      <SectionSecond/>
+      <SectionSecond />
       <SectionThird/>
-      <SectionFourth/>
+      <SectionFourth />
     </div>
   )
 }

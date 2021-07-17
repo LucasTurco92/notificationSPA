@@ -1,0 +1,28 @@
+.content {
+    flex-wrap: wrap;
+    flex-direction: row;
+    p {
+        max-width: width 500px;
+    }
+    h3 {
+        font-size: 2em;
+    }
+}
+
+.hands {
+    height: 100px;
+}
+
+@media (min-width: 1000px) {
+    .content {
+        p {
+            min-width: width 500px;
+        }
+        h3 {
+            font-size: 3em;
+        }
+    }
+    .hands {
+        height: 150px;
+    }
+}

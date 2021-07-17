@@ -1,0 +1,25 @@
+.content {
+    flex-direction: column;
+}
+
+.lawyer {
+    width: 100px;
+}
+
+@media (min-width: 1000px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        min-height: inherit;
+        p {
+            max-width: 750px;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+    .lawyer {
+        width: 300px;
+        align-self: flex-end;
+    }
+}

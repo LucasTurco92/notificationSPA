@@ -1,0 +1,31 @@
+.content {
+    flex-wrap: wrap;
+    h3 {
+        margin: 0 5%;
+        text-align: center;
+    }
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        width: 100px;
+    }
+}
+
+.bell {
+    width: 100px;
+}
+
+@media (min-width: 1000px) {
+    .content {
+        flex-wrap: nowrap;
+        p {
+            max-width: 1000px;
+        }
+        .bell {
+            width: 300px;
+        }
+    }
+}
