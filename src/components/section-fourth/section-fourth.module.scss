@@ -8,16 +8,13 @@
         font-size: 2em;
     }
     ul {
+        text-shadow: 0 0 3px #fff, 0 0 7px #fff;
         list-style: none;
     }
 }
 
-.legend {
+.contact {
     display: none;
-}
-
-.hands {
-    height: 100px;
 }
 
 .hermes {
@@ -34,9 +31,6 @@
         }
         margin-bottom: 2vh;
     }
-    .hands {
-        height: 150px;
-    }
     .hermes {
         align-self: flex-end;
     }
@@ -48,8 +42,5 @@
         display: inline;
         position: absolute;
         right: 20px
-    }
-    .legend {
-        display: none;
     }
 }

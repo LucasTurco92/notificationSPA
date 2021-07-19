@@ -7,7 +7,6 @@ const SectionFourth = () => {
     return (
     <SectionContainer color={'containerFourth'} show={true}>
       <div  id={'contacto'}  className={`${common.content} ${styles.content}`}>
-      <img className={styles.hands} src='/images/hand-shake.png'/>
         <ul>
           <li>
           ####-####
@@ -19,7 +18,6 @@ const SectionFourth = () => {
           Lorem Ipsum S.A
           </li>
         </ul>
-        <span className={styles.legend}>"Notifica tranquilo, nosotros nos encargamos."</span>   
         <img className={styles.hermes} src='/images/hermes.png'/>
       </div>
     </SectionContainer>
