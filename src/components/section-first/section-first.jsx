@@ -12,8 +12,8 @@ const SectionFirst = () => {
                 <h2 className={styles.title}>Notify</h2>        
                     <img className={styles.hermes} src='/images/hermes.png'/>
                 <span className={styles.legend}>"Notifica tranquilo, nosotros nos encargamos."</span>   
-                <img  className={styles.temple} src='/images/temple.png'/>
             </div>
+            <img style={{transform:`translateY(${ref * -0.8}px)`}} className={styles.temple} src='/images/temple.png'/>
         </SectionContainer>
     )
 }

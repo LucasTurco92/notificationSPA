@@ -4,6 +4,11 @@
         margin: 0 5%;
         text-align: center;
     }
+    position: relative;
+    z-index: 200;
+    p {
+        text-shadow: 0 0 3px #96bfce, 0 0 7px #000;
+    }
 }
 
 .text {
@@ -15,7 +20,17 @@
 }
 
 .bell {
-    width: 100px;
+    width: 200px;
+    z-index: -1;
+    position: absolute;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+@media (min-width: 500px) {
+    .bell {
+        width: 200px;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -26,6 +41,7 @@
         }
         .bell {
             width: 300px;
+            left: 10px;
         }
     }
 }

@@ -7,10 +7,21 @@
     h3 {
         font-size: 2em;
     }
+    ul {
+        list-style: none;
+    }
+}
+
+.legend {
+    display: none;
 }
 
 .hands {
     height: 100px;
+}
+
+.hermes {
+    display: none;
 }
 
 @media (min-width: 1000px) {
@@ -21,8 +32,24 @@
         h3 {
             font-size: 3em;
         }
+        margin-bottom: 2vh;
     }
     .hands {
         height: 150px;
+    }
+    .hermes {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 720px) {
+    .hermes {
+        height: 100px;
+        display: inline;
+        position: absolute;
+        right: 20px
+    }
+    .legend {
+        display: none;
     }
 }

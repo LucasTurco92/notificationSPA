@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 const useScroll = () => {
-
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
 
