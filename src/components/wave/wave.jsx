@@ -3,10 +3,10 @@ import styles from './wave.module.scss';
 const Wave = ({color}) =>
 {
     const filler ={
-        containerFirst:"#72828e",
-        containerSecond:"#fff4ea",
-        containerThird:"#fff4ea",
-        containerFourth:"#fff4ea",
+        containerFirst:"#fff",
+        containerSecond:"#0099ff",
+        containerThird:"#fff",
+        containerFourth:"#0099ff",
     } 
 
     return(<div  className={styles.container}>

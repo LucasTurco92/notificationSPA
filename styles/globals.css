@@ -25,10 +25,10 @@ p {
 }
 
 :root {
-    --white: #fff4ea;
-    --specialWhite: RGBA(255, 244, 234, 0.52);
+    --blue: #0099ff;
+    --specialBlue: RGBA(0, 153, 255, 0.52);
     --darkBlue: #515463;
-    --grey: #72828e;
+    --white: #fff;
     --aqua: #96bfce;
     --black: #000000;
 }

@@ -26,17 +26,17 @@
 
 .containerFirst {
     @extend .baseContainer;
-    background-color: var(--white);
+    background-color: var(--blue);
 }
 
 .containerThird {
     @extend .baseContainer;
-    background-color: var(--white);
+    background-color: var(--blue);
 }
 
 .containerSecond {
     @extend .baseContainer;
-    background-color: var(--grey);
+    background-color: var(--white);
 }
 
 .containerFourth {
@@ -46,6 +46,7 @@
     background-image: url('/images/contact.jpg');
     background-position: center center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 @media (min-width: 1000px) {
