@@ -27,6 +27,8 @@ p {
 :root {
     --blue: #0099ff;
     --specialBlue: RGBA(0, 153, 255, 0.52);
+    --specialBlack: RGBA(0, 0, 0, 0.7);
+    --specialWhite: RGBA(255, 255, 255, 0.7);
     --darkBlue: #515463;
     --white: #fff;
     --aqua: #96bfce;

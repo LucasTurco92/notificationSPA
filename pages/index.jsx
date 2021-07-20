@@ -4,11 +4,11 @@ import SectionFirst from "../src/components/section-first/section-first.jsx";
 import SectionSecond from "../src/components/section-second/section-second.jsx";
 import SectionThird from "../src/components/section-third/section-third.jsx";
 import SectionFourth from "../src/components/section-fourth/section-fourth.jsx";
-
+import styles from './home/home.module.scss';
 export default function Home() {
 
   return (
-    <div>
+    <div className={styles.container}>
       <Header/>
       <Nav/>
       <SectionFirst/>
